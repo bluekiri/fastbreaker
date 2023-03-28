@@ -1,6 +1,8 @@
 fastbreaker
 ===========
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/bluekiri/fastbreaker.svg)](https://pkg.go.dev/github.com/bluekiri/fastbreaker)
+
 [fastbreaker](https://github.com/bluekiri/fastbreaker) implements the [Circuit Breaker pattern](https://en.wikipedia.org/wiki/Circuit_breaker_design_pattern) in Go.
 
 Installation
