@@ -25,11 +25,11 @@ func (state State) String() string {
 const (
 	// StateStopped is the circuit breaker state when it is stopped.
 	StateStopped State = iota
-	// StateClosed is the circuit breaker state when it is allowing executions. 
-	StateClosed	
+	// StateClosed is the circuit breaker state when it is allowing executions.
+	StateClosed
 	// StateHalfOpen is the circuit breaker state when it tests if it should remain open
-	// or reset to the closed state. 
+	// or reset to the closed state.
 	StateHalfOpen
-	// StateOpen is the circuit breaker state when it is rejecting executions. 
+	// StateOpen is the circuit breaker state when it is rejecting executions.
 	StateOpen
 )

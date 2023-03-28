@@ -220,7 +220,7 @@ func assertStateAndCounters(t *testing.T, cb fastbreaker.FastBreaker, expectedSt
 
 func assertRollingCounters(t *testing.T, cb fastbreaker.FastBreaker, expectedExecutions int, expectedFailures int) {
 	t.Helper()
-	
+
 	actualExecutions, actualFailures := cb.RollingCounters()
 	if actualFailures != uint64(expectedFailures) {
 		t.Fatalf("%d failures expected instead of %d", expectedFailures, actualFailures)
