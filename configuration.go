@@ -20,10 +20,10 @@ func DefaultShouldTrip(executions uint64, failures uint64) bool {
 
 // Configuration is a struct used to configure a circuit breaker.
 type Configuration struct {
-	NumBuckets         int
-	BucketDuration     time.Duration
-	DurationOfBreak    time.Duration
-	ShouldTrip         ShouldTripFunc
+	NumBuckets      int
+	BucketDuration  time.Duration
+	DurationOfBreak time.Duration
+	ShouldTrip      ShouldTripFunc
 }
 
 // A ShouldTripFunc tells the circuit breaker to trip when it returns true. If it returns false,
