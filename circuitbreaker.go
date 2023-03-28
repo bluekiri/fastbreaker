@@ -14,7 +14,7 @@ var ErrCircuitOpen = errors.New("circuit breaker is open")
 type FastBreaker interface {
 	// Configuration returns the actual configuration used to create the circuit breaker.
 	Configuration() Configuration
-	
+
 	// Stop releases the circuit breaker resources.
 	Stop()
 
